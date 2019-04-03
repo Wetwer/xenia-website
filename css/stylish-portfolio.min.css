@@ -30,6 +30,16 @@ body {
     text-transform: uppercase
 }
 
+.gallery-img {
+    padding: 5px;
+    transition-duration: .1s;
+}
+
+.gallery-img:hover {
+    padding: 0;
+    transition-duration: .1s;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700
 }
