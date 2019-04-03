@@ -4,9 +4,7 @@
 
 ## Preview
 
-[![Stylish Portfolio Preview](https://startbootstrap.com/assets/img/screenshots/themes/stylish-portfolio.png)](https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/)
-
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/)**
+**[View Live Preview](https://wetwer.github.io/xenia-website/)**
 
 ## Status
 
