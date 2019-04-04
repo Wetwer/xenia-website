@@ -5650,6 +5650,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 .close:hover {
   color: #000;
   text-decoration: none;
+  outline: none;
 }
 
 .close:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
