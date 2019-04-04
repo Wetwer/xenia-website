@@ -75,9 +75,10 @@
         <div class="row">
             <div class="col-lg-10 mx-auto">
                 <h2>About</h2>
+                <br>
                 <div class="row">
                     <div class="col-12 col-sm-3">
-                        <img class="rounded-circle" src="img/xenia-about.jpg">
+                        <img class="rounded-circle shadow-lg" src="img/xenia-about.jpg" style="margin-bottom: 10px">
                     </div>
                     <div class="col-12 col-sm-9">
                         <p class="lead mb-5" style="text-align: left">
@@ -91,14 +92,20 @@
                         </p>
                     </div>
                 </div>
-                <h3 class="text-secondary mb-0">Daten</h3>
-                <br>
-                <ul class="list-group">
-                    <li class="list-group-item">Vorname: Xenia</li>
-                    <li class="list-group-item">Nachname: Spörri</li>
-                    <li class="list-group-item">Geburtstag: 18.05.2001</li>
-                    <li class="list-group-item">Wohnort: Zürich/Davos</li>
-                </ul>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 about-tags">
+                        <i class="fas fa-snowboarding"></i>
+                        Snowboard Alpine
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 about-tags">
+                        <i class="fas fa-birthday-cake"></i>
+                        18.05.2001
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 about-tags">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Zürich / Davos
+                    </div>
+                </div>
                 <br>
                 <h3 class="text-secondary mb-0">Hobbies</h3>
                 <br>
@@ -117,43 +124,110 @@
             <h2 class="mb-5">Resultate</h2>
         </div>
         <div class="row">
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 result-card">
                 <div class="service-icon rounded-circle mx-auto mb-3 place-silver">
                     <b>2</b>
                 </div>
                 <h4>
                     <strong>Rogla, CZ</strong>
                 </h4>
-                <p class="text-faded mb-0">Junior World Championship</p>
+                <p class="mb-0">Junior World Championship</p>
+                <p class="text-faded mb-0">04.04.2019</p>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 result-card">
                 <div class="service-icon rounded-circle mx-auto mb-3 place-gold">
                     <b>1</b>
                 </div>
                 <h4>
                     <strong>Rogla, CZ</strong>
                 </h4>
-                <p class="text-faded mb-0">Junior World Championship</p>
+                <p class="mb-0">Junior World Championship</p>
+                <p class="text-faded mb-0">03.04.2019</p>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 result-card">
                 <div class="service-icon rounded-circle mx-auto mb-3 place-bronze">
                     <b>3</b>
                 </div>
                 <h4>
                     <strong>Rogla, CZ</strong>
                 </h4>
-                <p class="text-faded mb-0">Junior World Championship</p>
+                <p class="mb-0">Junior World Championship</p>
+                <p class="text-faded mb-0">02.04.2019</p>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 result-card">
                 <div class="service-icon rounded-circle mx-auto mb-3">
                     <b>20</b>
                 </div>
                 <h4>
                     <strong>Lenzerheide, CH</strong>
                 </h4>
-                <p class="text-faded mb-0">Europacup</p>
+                <p class="mb-0">Europacup</p>
+                <p class="text-faded mb-0">25.03.2019</p>
             </div>
         </div>
+        <br>
+        <button class="btn btn-light btn-xl" type="button" data-toggle="collapse" data-target="#olderresults"
+                aria-expanded="false" aria-controls="olderresults">
+            Alle Resultate
+        </button>
+
+        <div class="collapse" id="olderresults">
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 result-card">
+                    <div class="service-icon rounded-circle mx-auto mb-3">
+                        <b>12</b>
+                    </div>
+                    <h4>
+                        <strong>Baumberg, AT</strong>
+                    </h4>
+                    <p class="mb-0">Europacup</p>
+                    <p class="text-faded mb-0">20.03.2019</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 result-card">
+                    <div class="service-icon rounded-circle mx-auto mb-3">
+                        <b>4</b>
+                    </div>
+                    <h4>
+                        <strong>Wintergletscher, DE</strong>
+                    </h4>
+                    <p class="mb-0">Junior FIS</p>
+                    <p class="text-faded mb-0">14.03.2019</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 result-card">
+                    <div class="service-icon rounded-circle mx-auto mb-3 place-dnf">
+                        <b>DNF</b>
+                    </div>
+                    <h4>
+                        <strong>Davos, CH</strong>
+                    </h4>
+                    <p class="mb-0">Europacup</p>
+                    <p class="text-faded mb-0">02.03.2019</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 result-card">
+                    <div class="service-icon rounded-circle mx-auto mb-3 place-silver">
+                        <b>2</b>
+                    </div>
+                    <h4>
+                        <strong>Icehalle, NL</strong>
+                    </h4>
+                    <p class="mb-0">Junior FIS</p>
+                    <p class="text-faded mb-0">10.02.2019</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 result-card">
+                    <div class="service-icon rounded-circle mx-auto mb-3">
+                        <b>8</b>
+                    </div>
+                    <h4>
+                        <strong>Sandberg, IRN</strong>
+                    </h4>
+                    <p class="mb-0">Worldcup</p>
+                    <p class="text-faded mb-0">02.02.2019</p>
+                </div>
+            </div>
+        </div>
+        <br>
         <br>
         <a class="btn btn-dark btn-xl js-scroll-trigger" href="#gallery">Gallerie</a>
     </div>
@@ -168,28 +242,43 @@
         <div class="row">
             <div class="col-12 col-sm-4 col-md-3 gallery-img">
                 <a href="#" class="pop">
-                    <img src="img/samplimg.jpg" class="img-fluid">
+                    <img src="img/sponsor-swisscom.jpg" class="img-fluid shadow-lg">
                 </a>
             </div>
             <div class="col-12 col-sm-4 col-md-3 gallery-img">
                 <a href="#" class="pop">
-                    <img src="img/sponsor-swisscom.jpg" class="img-fluid">
+                    <img src="img/bg-masthead.jpg" class="img-fluid shadow-lg">
                 </a>
             </div>
             <div class="col-12 col-sm-4 col-md-3 gallery-img">
-                <img src="img/samplimg.jpg" class="img-fluid">
+                <a href="#" class="pop">
+                    <img src="img/samplimg.jpg" class="img-fluid shadow-lg">
+                </a>
             </div>
             <div class="col-12 col-sm-4 col-md-3 gallery-img">
-                <img src="img/samplimg.jpg" class="img-fluid">
+                <a href="#" class="pop">
+                    <img src="img/sponsor-swisscom.jpg" class="img-fluid shadow-lg">
+                </a>
             </div>
             <div class="col-12 col-sm-4 col-md-3 gallery-img">
-                <img src="img/samplimg.jpg" class="img-fluid">
+                <a href="#" class="pop">
+                    <img src="img/bg-masthead.jpg" class="img-fluid shadow-lg">
+                </a>
             </div>
             <div class="col-12 col-sm-4 col-md-3 gallery-img">
-                <img src="img/samplimg.jpg" class="img-fluid">
+                <a href="#" class="pop">
+                    <img src="img/samplimg.jpg" class="img-fluid shadow-lg">
+                </a>
             </div>
             <div class="col-12 col-sm-4 col-md-3 gallery-img">
-                <img src="img/samplimg.jpg" class="img-fluid">
+                <a href="#" class="pop">
+                    <img src="img/sponsor-swisscom.jpg" class="img-fluid shadow-lg">
+                </a>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 gallery-img">
+                <a href="#" class="pop">
+                    <img src="img/bg-masthead.jpg" class="img-fluid shadow-lg">
+                </a>
             </div>
         </div>
     </div>
@@ -203,7 +292,7 @@
 <section class="content-section" id="sponsors">
     <div class="container">
         <div class="content-section-heading text-center">
-            <h2 class="mb-5">Sponsors</h2>
+            <h2 class="mb-5">Sponsoren</h2>
         </div>
         <div class="row no-gutters">
             <div class="col-lg-6">
@@ -291,7 +380,9 @@
                 </a>
             </li>
         </ul>
-        <p class="text-muted small mb-0">&copy; 2019 <a href="https://github.com/Wetwer">Felix</a></p>
+        <p class="text-muted small mb-0">
+            Für meine Schwester
+        </p>
     </div>
 </footer>
 
