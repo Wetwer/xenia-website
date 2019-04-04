@@ -44,6 +44,9 @@
             <a class="js-scroll-trigger" href="#results">Results</a>
         </li>
         <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#gallery">Gallerie</a>
+        </li>
+        <li class="sidebar-nav-item">
             <a class="js-scroll-trigger" href="#sponsors">Sponsors</a>
         </li>
         <li class="sidebar-nav-item">
@@ -72,15 +75,22 @@
         <div class="row">
             <div class="col-lg-10 mx-auto">
                 <h2>About</h2>
-                <p class="lead mb-5" style="text-align: left">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum tortor imperdiet ligula
-                    sodales consequat. Aenean et sem eu mauris scelerisque dictum eget vitae metus. Nam quam neque,
-                    eleifend ut porttitor ut, aliquet eu purus. Ut porttitor dapibus lacus, sed rutrum ex tincidunt eu.
-                    Maecenas facilisis et enim vel sodales. Fusce vulputate magna sapien, quis sollicitudin tellus
-                    tempor semper. Suspendisse auctor vitae dui id molestie. Cras aliquam pellentesque sem, in interdum
-                    nisi sollicitudin eu. Aenean at augue urna. Morbi tempor sem id odio pretium, id ultricies dui
-                    iaculis. Nulla facilisi.
-                </p>
+                <div class="row">
+                    <div class="col-12 col-sm-3">
+                        <img class="rounded-circle" src="img/xenia-about.jpg">
+                    </div>
+                    <div class="col-12 col-sm-9">
+                        <p class="lead mb-5" style="text-align: left">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum tortor imperdiet
+                            ligula sodales consequat. Aenean et sem eu mauris scelerisque dictum eget vitae metus. Nam
+                            quam neque, eleifend ut porttitor ut, aliquet eu purus. Ut porttitor dapibus lacus, sed
+                            rutrum ex tincidunt eu. Maecenas facilisis et enim vel sodales. Fusce vulputate magna
+                            sapien, quis sollicitudin tellus tempor semper. Suspendisse auctor vitae dui id molestie.
+                            Cras aliquam pellentesque sem, in interdum nisi sollicitudin eu. Aenean at augue urna. Morbi
+                            tempor sem id odio pretium, id ultricies dui iaculis. Nulla facilisi.
+                        </p>
+                    </div>
+                </div>
                 <h3 class="text-secondary mb-0">Daten</h3>
                 <br>
                 <ul class="list-group">
@@ -108,7 +118,16 @@
         </div>
         <div class="row">
             <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                <div class="service-icon rounded-circle mx-auto mb-3">
+                <div class="service-icon rounded-circle mx-auto mb-3 place-silver">
+                    <b>2</b>
+                </div>
+                <h4>
+                    <strong>Rogla, CZ</strong>
+                </h4>
+                <p class="text-faded mb-0">Junior World Championship</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                <div class="service-icon rounded-circle mx-auto mb-3 place-gold">
                     <b>1</b>
                 </div>
                 <h4>
@@ -117,17 +136,8 @@
                 <p class="text-faded mb-0">Junior World Championship</p>
             </div>
             <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                <div class="service-icon rounded-circle mx-auto mb-3">
-                    <b>1</b>
-                </div>
-                <h4>
-                    <strong>Rogla, CZ</strong>
-                </h4>
-                <p class="text-faded mb-0">Junior World Championship</p>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                <div class="service-icon rounded-circle mx-auto mb-3">
-                    <b>1</b>
+                <div class="service-icon rounded-circle mx-auto mb-3 place-bronze">
+                    <b>3</b>
                 </div>
                 <h4>
                     <strong>Rogla, CZ</strong>
@@ -157,10 +167,14 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-sm-4 col-md-3 gallery-img">
-                <img src="img/samplimg.jpg" class="img-fluid">
+                <a href="#" class="pop">
+                    <img src="img/samplimg.jpg" class="img-fluid">
+                </a>
             </div>
             <div class="col-12 col-sm-4 col-md-3 gallery-img">
-                <img src="img/samplimg.jpg" class="img-fluid">
+                <a href="#" class="pop">
+                    <img src="img/sponsor-swisscom.jpg" class="img-fluid">
+                </a>
             </div>
             <div class="col-12 col-sm-4 col-md-3 gallery-img">
                 <img src="img/samplimg.jpg" class="img-fluid">
@@ -282,9 +296,26 @@
 </footer>
 
 <!-- Scroll to Top Button-->
-<a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-    <i class="fas fa-angle-up"></i>
+<a class="scroll-to-top rounded js-scroll-trigger btn btn-dark" href="#page-top">
+    <i class="fas fa-chevron-up"></i>
 </a>
+
+<!-- Modal for Img preview -->
+<div class="modal" tabindex="-1" role="dialog" id="imagemodal" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content bg-dark text-white border-0">
+            <div class="modal-header">
+                <h5 class="modal-title">Gallerie</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <i class="fas fa-times text-white"></i>
+                    </span>
+                </button>
+            </div>
+            <img src="" class="imagepreview" style="width: 100%; height: 100%;"/>
+        </div>
+    </div>
+</div>
 
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
@@ -295,6 +326,16 @@
 
 <!-- Custom scripts for this template -->
 <script src="js/stylish-portfolio.min.js"></script>
+
+<script>
+    $(function () {
+        $('.pop').on('click', function ($e) {
+            $e.preventDefault();
+            $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+            $('#imagemodal').modal('show');
+        });
+    });
+</script>
 
 </body>
 

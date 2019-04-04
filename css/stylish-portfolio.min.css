@@ -21,6 +21,21 @@ body {
     padding-bottom: 7.5rem
 }
 
+.place-gold {
+    background-color: gold !important;
+    color: white !important;
+}
+
+.place-silver {
+    background-color: silver !important;
+    color: white !important;
+}
+
+.place-bronze {
+    background-color: #815F34 !important;
+    color: white !important;
+}
+
 .content-section-heading h2 {
     font-size: 3rem
 }
@@ -35,9 +50,9 @@ body {
     transition-duration: .1s;
 }
 
-.gallery-img:hover {
-    padding: 0;
-    transition-duration: .1s;
+.imagepreview {
+    border-bottom-left-radius: ;
+    border-bottom-right-radius: ;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -70,17 +85,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 50px;
     height: 50px;
     text-align: center;
-    color: #fff;
-    background: rgba(52, 58, 64, .5);
-    line-height: 45px
-}
-
-.scroll-to-top:focus, .scroll-to-top:hover {
-    color: #fff
-}
-
-.scroll-to-top:hover {
-    background: #343a40
+    line-height: 37px;
 }
 
 .scroll-to-top i {
@@ -205,10 +210,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2.25rem;
     -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1)
-}
-
-.callout {
-    padding: 15rem 0;
 }
 
 .callout h2 {
